@@ -1,0 +1,8 @@
+sources:
+  specimen:
+      description: Sample images of pinned insects from the Natural History Museum, London collection, and masks of specimen labels.
+      origin:
+      driver: intake_xarray.image.ImageSource
+      args:
+        urlpath: ["zip://*/*.jpeg::simplecache::https://zenodo.org/record/8010565/files/ALICE_training_masks.zip"]
+        chunks: {}
